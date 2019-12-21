@@ -336,6 +336,7 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		box-sizing: border-box;
 		align-items: stretch;
 	}
@@ -2002,6 +2003,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2021,6 +2023,7 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2046,6 +2049,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -2084,7 +2088,7 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				display: inline-block;
+				display: block;
 				font-style: normal;
 				font-variant: normal;
 				text-rendering: auto;
@@ -2146,6 +2150,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		background-color: rgba(255, 255, 255, 0.075);
@@ -2155,6 +2160,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #8cc9f0;
@@ -3463,6 +3469,7 @@ input, select, textarea {
 		#main input[type="text"],
 		#main input[type="password"],
 		#main input[type="email"],
+		#main input[type="tel"],
 		#main select,
 		#main textarea {
 			background-color: rgba(222, 222, 222, 0.25);
@@ -3472,6 +3479,7 @@ input, select, textarea {
 			#main input[type="text"]:focus,
 			#main input[type="password"]:focus,
 			#main input[type="email"]:focus,
+			#main input[type="tel"]:focus,
 			#main select:focus,
 			#main textarea:focus {
 				border-color: #8cc9f0;
